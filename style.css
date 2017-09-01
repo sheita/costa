@@ -1,0 +1,121 @@
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Début du CSS */
+body {
+  background-color: #1a1a1a;
+  line-height: 1;
+  width: 100%;
+  heigth: 100%;
+  font-family: 'Helvetica Neue', sans-serif;
+  text-align: center;
+  color: #444;
+  margin-top: 40px;
+}
+
+header {
+}
+
+main {
+  margin: 0 auto;
+  width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input {
+  margin: 10px;
+  width: 60px;
+  box-sizing: border-box;
+  border: 2px solid lightgrey;
+  border-radius: 4px;
+  padding: 6px 10px;
+  display: inline-block;
+  font-size: 15px;
+  text-align: center;
+}
+
+footer {
+  font-size: 10px;
+  color: lightgrey;
+  padding: 10px;
+}
+
+b {
+  font-weight: bold;
+}
+
+#choisirChaine {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+
+#boutonValider {
+  display: inline-block;
+  margin: 0;
+}
+
+#resultat {
+  padding: 10px 0;
+  color: white;
+  display: none;
+}
+
+#TNTlogo {
+  margin: 20px 0 10px;
+  width: 100px;
+}
+
+header img {
+  transition: 0.5s;
+}
+header img:hover {
+  opacity: 0;
+  transform: scale(3) rotate(10deg);
+}
+
+#logoChaine {
+  height: 100px;
+  width: auto;
+  display: none;
+}
+
+#logoImage {
+  max-height: 80px;
+  width: auto;
+}
+
+#moreInfos {
+  display: none;
+}
+
+#moreInfoLink {
+  text-decoration: underline;
+	cursor: pointer;
+}
+
+.separator {
+  margin: 0 auto;
+  background-color: red;
+  width: 90%;
+  height: 10px;
+}

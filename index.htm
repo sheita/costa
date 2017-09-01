@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>myTNT</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="apple-touch-icon-precomposed" href="images/TNTbookmark.png" />
+  </head>
+
+  <body>
+    <header>
+      <img id="TNTlogo" src="images/TNT.png">
+    </header>
+
+    <div class="separator"></div>
+
+
+    <main>
+      <div id="choisirChaine">
+        <p>Choisissez un numéro pour découvrir la chaîne de la TNT qui correspond à ce numéro :</p>
+        <input type="number" autocomplete="off" pattern="[0-9]*" inputmode="numeric" id="numeroInput"><br>
+        <button id="boutonValider" onclick="handlers.trouverUneChaine()">Valider</button><br>
+      </div>
+
+      <div id="resultat"></div>
+      <div id="logoChaine"></div>
+    </main>
+
+
+    <div class="separator"></div>
+
+    <footer>
+      by Clément -
+      <a onclick="handlers.moreInfo()" id="moreInfoLink">more infos</a>
+
+      <div href="#" id="moreInfos"><br>
+        Les logos utilisés sont les propriétés des chaînes évoquées.<br>
+        codename tntFinder<br><br>
+        try 42, 69, 404, 420, 666 and tap on the TNT<br>
+        made with no framework
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+
+  </body>
+</html>
